@@ -1,0 +1,14 @@
+services:
+  rag-chat-app-with-nextjs-langchain:
+    container_name: rag-chat-app-with-nextjs-langchain
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    ports:
+      - 3000:3000
+    entrypoint: sh -c "pnpm install && pnpm run build && pnpm run dev"
+    working_dir: /rag-chat-app-with-nextjs-langchain
+    volumes:
+      - .:/rag-chat-app-with-nextjs-langchain
