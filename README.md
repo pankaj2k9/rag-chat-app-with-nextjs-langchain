@@ -1,6 +1,6 @@
 # rag-chat-app-with-nextjs-langchain
 
-Simple chat app integrating LangChain + RAG created for AI Series Part IV blog post
+A Simple chat app integrating LangChain + RAG with next.js
 
 ## Running
 
